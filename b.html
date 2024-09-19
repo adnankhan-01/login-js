@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.fi{width: 300px;border-radius: 20px;}
+input{border-radius: 9px;}
+.log{color: lawngreen;}
+label{color: rgb(84, 168, 0);}
+#button{background-color: rgb(255, 187, 0);color:rgb(0, 0, 0) ;}
+#hh{background-color: rgb(127, 255, 219);border-radius: 20px;width: 320px;}
+#d2{background-color: rgb(0, 187, 255);border-radius: 20px;width: 320px;}
+h3{color: aliceblue; background-color: brown; border-radius: 10px;width: 190px;}
+    </style>
+</head>
+<body>
+<center>
+    <fieldset class="fi">
+        <legend class="log">login</legend>
+        <label for="">name : <input type="text" name="adnan" id="name" value=""></label><br><br>
+        <label for="">email : <input type="email" name="" id="name1"></label><br><br>
+        <label for="">password : <input type="password" name="" id="name2"></label><br><br>
+        <input type="button" value="don" id="button" onclick="nam()">
+    </fieldset>
+        <div id="d"></div>
+         <DIV id="d2"><h1 id="ha1"><h3 id="na"></h3></h1>
+        <h2 id="ha2"><h3 id="ak"></h3></h2><h2 id="ha3"><h3 id="aak"></h3></h2>
+        <span id="ii"></span></DIV>
+</center>
+    <script>
+function  nam(){
+    var inputValue = document.getElementById('name').value;
+    var ak = document.getElementById('name1').value;
+    var aak = document.getElementById('name2').value;
+    document.getElementById('d').innerHTML=`<h1 id="hh">your masage is sussfully</h1> <br>`;
+    document.getElementById('ha1').innerHTML=`<hr/> hallo <br>`;
+    document.getElementById('ha2').innerHTML=`<hr/> your Email is <br>`;
+    document.getElementById('ha3').innerHTML=`<hr/> and your Email password is <br>`;
+    document.getElementById('na').innerHTML=inputValue;
+    document.getElementById('ak').innerHTML=ak;
+    document.getElementById('aak').innerHTML=aak;
+    document.getElementById('ii').innerHTML=`<input type="checkbox"/>i am not robot<br>`;}
+</script>
+</body>
+</html>
